@@ -1,0 +1,23 @@
+{
+  "name": "@xiaoyao/omit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "build:cjs": "tsc --project ./tsconfig.cjs.json",
+    "build:esm": "tsc --project ./tsconfig.esm.json",
+    "build": "pnpm build:cjs & pnpm build:esm",
+    "coverage": "vitest run --coverage",
+    "push": "npm publish --access public --registry=https://registry.npmjs.org"
+  },
+  "keywords": [],
+  "author": "xiaoyao",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "4.9.3",
+    "vitest": "0.25.3"
+  }
+}
